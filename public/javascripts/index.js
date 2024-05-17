@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         yearRangeDisplay.innerText = `${startYear} ~ ${endYear}`;
 
         // 確保 End 不會小於 start
-        endYearInput.min = startYear;
+        endYearInput.min = parseInt(startYear) + 1;
     }
 
     function updateData() {
